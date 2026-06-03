@@ -628,6 +628,7 @@ body::after {
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
 }
+.auto-grid.trio { grid-template-columns: repeat(3, 1fr); }
 .auto-card {
   padding: 34px 36px;
   border-right: 1px solid var(--border);
@@ -752,6 +753,11 @@ body::after {
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid rgba(26,22,20,0.14);
   background: #fff;
+}
+.plans-grid.single {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+  margin: 0 auto;
 }
 .plan-card {
   padding: 48px 40px;
@@ -924,7 +930,7 @@ footer {
   .system-core { grid-template-columns: 1fr; }
   .core-meta { flex-direction: row; align-items: center; justify-content: space-between; border-right: none; border-bottom: 1px solid var(--border); padding: 18px 24px; }
   .core-body { padding: 30px 24px; }
-  .auto-grid { grid-template-columns: 1fr; border-left: none; }
+  .auto-grid, .auto-grid.trio { grid-template-columns: 1fr; border-left: none; }
   .auto-card { padding: 28px 24px; border-left: 1px solid var(--border); }
   .system-result { padding: 28px 24px; }
 
